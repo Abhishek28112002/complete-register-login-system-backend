@@ -5,6 +5,7 @@ function verify(requestBody) {
   if (!requestBody.user || !requestBody.user.username || !requestBody.token) {
     return util.buildResponse(401, { 
       verified: false,
+      status:"fail",
       message: 'incorrect request body'
     })
   }
@@ -18,7 +19,7 @@ function verify(requestBody) {
 
   return util.buildResponse(200, {
     verified: true,
-    message: 'success',
+    status: 'success',
     user: user,
     token: token
   })

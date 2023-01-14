@@ -3,7 +3,11 @@
   "author": "felixyu",
   "version": "1.0.0",
   "dependencies": {
+    "@google-cloud/translate": "^7.0.5",
     "bcryptjs": "2.4.3",
-    "jsonwebtoken": "8.5.1"
+    "expo-server-sdk": "^3.7.0",
+    "jsonwebtoken": "8.5.1",
+    "nodemailer": "^6.8.0",
+    "request": "^2.88.2"
   }
 }
